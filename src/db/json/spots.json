@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Lobbe",
+    "description": "I'm baby palo santo 8-bit letterpress shoreditch, farm-to-table swag blog. Freegan art party tousled health goth enamel pin cred flexitarian man bun listicle bespoke lo-fi biodiesel.",
+    "coords": [54.316123, 13.723072],
+    "wind": {
+      "direction": "O-SO",
+      "size": 0.35,
+      "rotation": -160
+    },
+    "spot": "Welle",
+    "thumb": ""
+  },
+  {
+    "name": "Gager",
+    "description": "I'm baby palo santo 8-bit letterpress shoreditch, farm-to-table swag blog. Freegan art party tousled health goth enamel pin cred flexitarian man bun listicle bespoke lo-fi biodiesel.",
+    "coords": [54.311624, 13.681719],
+    "wind": {
+      "direction": "N-NW",
+      "size": 0.4,
+      "rotation": 100
+    },
+    "spot": "Stehrevier",
+    "thumb": ""
+  },
+  {
+    "name": "Thiessow Nordstrand",
+    "description": "I'm baby palo santo 8-bit letterpress shoreditch, farm-to-table swag blog. Freegan art party tousled health goth enamel pin cred flexitarian man bun listicle bespoke lo-fi biodiesel.",
+    "coords": [54.28704, 13.716163],
+    "wind": {
+      "direction": "O-NO",
+      "size": 0.45,
+      "rotation": -200
+    },
+    "spot": "Welle",
+    "thumb": ""
+  },
+  {
+    "name": "Thiessow OT Klein Zicker",
+    "description": "I'm baby palo santo 8-bit letterpress shoreditch, farm-to-table swag blog. Freegan art party tousled health goth enamel pin cred flexitarian man bun listicle bespoke lo-fi biodiesel.",
+    "coords": [54.278907, 13.69829],
+    "wind": {
+      "direction": "W-SW",
+      "size": 0.35,
+      "rotation": -40
+    },
+    "spot": "Stehrevier",
+    "thumb": "../images/wingsurfen-00009.jpg"
+  }
+]

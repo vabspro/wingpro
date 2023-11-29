@@ -1,0 +1,117 @@
+.reviews
+    position: relative
+    margin: 160px 0
+    @media screen and ( max-width: 767px )
+        margin-bottom: 80px
+    &__shape
+        position: absolute
+        top: 240px
+        left: 0
+        @media screen and ( max-width: 767px )
+            top: -40px
+        
+        svg
+            height: 160px
+            width: auto
+            @media screen and ( max-width: 1023px )
+                height: 100px
+            
+            @media screen and ( max-width: 767px )
+                height: 80px
+    &__container
+        @extend .container
+        position: relative
+        h2
+            font-size: 3.2rem
+            text-transform: uppercase
+            letter-spacing: 4px
+            position: relative
+            z-index: 20
+            @media screen and ( max-width: 767px )
+                font-size: 1.8rem
+                letter-spacing: 1px
+            .hidden
+                display: block
+                height: 80px
+                overflow: hidden
+                @media screen and ( max-width: 767px )
+                    height: 40px
+
+                span
+                    display: block
+
+        &--image
+            position: absolute
+            top: 0
+            right: 0
+            z-index: 10
+            @media screen and ( max-width: 1023px )
+                max-width: 160px
+                top: 80px
+
+    &__slider
+        display: flex
+        flex-direction: row
+        justify-content: flex-start
+        align-items: flex-start
+        @media screen and ( max-width: 767px )
+            flex-direction: column
+        &--controls
+            margin-top: 3.2rem
+            width: 560px
+            display: flex
+            align-items: center
+            justify-content: flex-start
+            position: relative
+            z-index: 20
+            @media screen and ( max-width: 1023px )
+                width: 180px
+            @media screen and ( max-width: 767px )
+                width: 100%
+
+            .prev,
+            .next
+                cursor: pointer
+                &.disabled
+                    opacity: .4
+            svg
+                height: 40px
+                width: auto
+            .prev
+                margin-right: 1rem
+                svg
+                    transform: rotate(180deg)
+
+        &--inner
+            background-color: #F3F8FA
+            flex: 1
+            position: relative
+            overflow: hidden
+            @media screen and ( max-width: 767px )
+                width: 100%
+
+            
+        &--slides
+            position: relative
+            display: flex
+            align-items: center
+            justify-content: flex-start
+            flex-wrap: nowrap
+            transition: all 1s ease
+
+        &--slide
+            min-width: 100%
+            padding: 4rem
+            @media screen and ( max-width: 1023px )
+                font-size: 1rem
+            @media screen and ( max-width: 767px )
+                padding: 2rem 2rem
+            span
+                display: block
+            strong
+                display: block
+                font-weight: 600
+                margin-bottom: 1rem
+                color: #1D1D21
+            p
+                max-width: 400px

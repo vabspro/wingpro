@@ -1,0 +1,91 @@
+.accordion
+    position: reative
+    @extend .container
+    margin-top: 100px
+
+    &__container
+        max-width: 960px
+        margin: 0px auto
+        position: relative
+
+    &__item
+        &--header
+            width: 400px
+            padding: .8rem
+            border-bottom: 1px solid rgba(#83828A, .2)
+            display: flex
+            align-items: center
+            justify-content: space-between
+            cursor: pointer
+            @media screen and ( max-width: 1023px )
+                width: 300px
+                padding: .5rem
+            @media screen and ( max-width: 767px )
+                width: 100%
+            div
+                pointer-events: none
+                display: flex
+                align-items: center
+                justify-content: flex-start
+                @media screen and ( max-width: 767px )
+                    flex: 1
+                    justify-content: space-between
+            svg
+                width: 32px
+                height: auto
+                pointer-events: none
+                @media screen and ( max-width: 767px )
+                    display: none
+
+            svg.icon
+                width: 24px
+                height: auto
+                max-height: 24px
+                margin-right: 24px
+                fill: rgba(#83828A, .2)
+                pointer-events: none
+                transition: fill .4s ease
+                @media screen and ( max-width: 767px )
+                    display: block
+
+            strong
+                font-weight: 600
+                text-transform: uppercase
+                letter-spacing: 2px
+                color: rgba(#83828A, .2)
+                pointer-events: none
+                transition: color .4s ease
+                @media screen and ( max-width: 1023px )
+                    font-size: 1rem
+
+        &:last-of-type .accordion__item--header
+            border-bottom: none
+
+
+        &--body
+            position: absolute
+            left: 480px
+            top: 0
+            height: 0px
+            overflow: hidden
+            @media screen and ( max-width: 1023px )
+                left: 320px
+                font-size: 1rem
+            @media screen and ( max-width: 767px )
+                position: relative
+                left: 0
+                p
+                    padding: .8rem 0
+
+
+        &.active
+            .accordion__item--header 
+                strong
+                    color: #83828A
+                    transition: color .4s ease
+                svg
+                    fill: #83828A
+                    transition: fill .4s ease
+
+
+        

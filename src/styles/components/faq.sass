@@ -1,0 +1,91 @@
+.faq
+    position: relative
+    margin: 160px 0
+    &__container
+        @extend .container
+        h2
+            font-size: 3.2rem
+            text-transform: uppercase
+            letter-spacing: 4px
+            position: relative
+            z-index: 20
+            margin-bottom: 2rem
+            @media screen and ( max-width: 767px )
+                font-size: 1.8rem
+                letter-spacing: 1px
+            .hidden
+                display: block
+                height: 80px
+                overflow: hidden
+                @media screen and ( max-width: 767px )
+                    height: 40px
+
+                span
+                    display: block
+    &__item
+        @media screen and ( max-width: 767px )
+            border-bottom: 2px solid whitesmoke
+            margin-top: -1rem
+            padding-bottom: 1rem
+            font-size: 1rem
+        &--header
+            font-weight: 600
+            cursor: pointer
+            transition: color .4s ease
+            position: relative
+            padding-left: 24px
+            @media screen and ( max-width: 767px )
+                padding-left: 0
+            &::before
+                content: ''
+                height: 16px
+                width: 4px
+                background-color: #FFA177
+                position: absolute
+                left: 0px
+                top: 50%
+                transform: translateY(-50%)
+                display: block
+                transition: transform .6s ease
+                @media screen and ( max-width: 767px )
+                    display: none
+
+            &::after
+                content: ''
+                height: 16px
+                width: 4px
+                background-color: #FFA177
+                position: absolute
+                left: 0px
+                top: 50%
+                transform: translateY(-50%) rotate(90deg)
+                display: block
+                @media screen and ( max-width: 767px )
+                    display: none
+
+        &--body
+            height: 0px
+            overflow: hidden
+            ul
+                list-style: none
+                padding: 0
+                margin: 0
+
+                li
+                    margin-bottom: .4rem
+                    padding: 0
+                    &::before
+                        display: none
+
+        &.active
+            .faq__item--header
+                color: #1D1D21
+                transition: color .4s ease
+
+                &::before
+                    transform: translateY(-50%) rotate(90deg)
+                    transition: transform .6s ease
+                    @media screen and ( max-width: 767px )
+                        display: none
+
+
